@@ -1,0 +1,62 @@
+.App {
+  margin-left: 32px;
+  position: fixed;
+  overflow-y: scroll;
+  width: calc(100% - 32px);
+  height: 100%;
+}
+.card{
+  display: flex;
+  height: 150px;
+}
+.cardImg{
+  margin: 16px;
+}
+.cardData{
+  margin: 16px;
+  margin-left: 0;
+}
+.cardTitle{
+ margin: 0;
+}
+
+.cardSubDes{
+  display: flex;
+  margin: 0;
+}
+.cardSubDesLable{
+  border: 2px solid;
+  text-align: center;
+  padding: auto;
+  margin-right: 8px;
+}
+.AppData{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 64px;
+  height: 64px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
